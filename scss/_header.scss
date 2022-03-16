@@ -1,0 +1,31 @@
+header.header{
+    grid-area: header;
+    background-color: rgba(127, 255, 212, 0.680);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+        div.caja1{
+            background-color: map-get($colores , colorSecundario);
+            margin: 0.5%;
+        }
+        div.caja2{
+            background-color: map-get($colores , colorSecundario );
+            width: 80%;
+                nav{
+                    width: 100%;
+                    background-color: map-get($colores , sincolor);
+                        div{
+                            width: 100%;
+                                ul{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                        }
+                }
+        }
+}

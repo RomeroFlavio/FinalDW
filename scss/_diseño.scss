@@ -1,0 +1,24 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fondo {
+    width: 100%;
+    background-image: url("../assets/images/logo/fondo_index.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$colores:(
+    colorPrimario: rgba(28, 253, 178, 0.719)!important,
+    colorSecundario: rgba(210, 106, 241, 0.68),
+    titulo: #cd75e7,
+    sombra: black,
+    sincolor:rgba(255, 255, 255, 0)!important,
+)
