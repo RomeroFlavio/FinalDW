@@ -1,6 +1,6 @@
 header.header{
     grid-area: header;
-    background-color: rgba(127, 255, 212, 0.680);
+    background-color: map-get($colores , colorPrimario);
     position: sticky;
     top: 0px;
     display: flex;
@@ -9,12 +9,19 @@ header.header{
     align-items: center;
     z-index: 2;
         div.caja1{
-            background-color: map-get($colores , colorSecundario);
             margin: 0.5%;
+                a{
+                    @extend .boton;
+                }
+                a:hover{
+                    @extend .boton2;
+                }
+                a:active{
+                    @extend .boton3;
+                }   
         }
         div.caja2{
-            background-color: map-get($colores , colorSecundario );
-            width: 80%;
+            width: 50%;
                 nav{
                     width: 100%;
                     background-color: map-get($colores , sincolor);
@@ -23,9 +30,33 @@ header.header{
                                 ul{
                                     width: 100%;
                                     display: flex;
-                                    justify-content: space-between;
+                                    justify-content: center;
+                                        li{
+                                            margin: map-get($margen , mar-ancho);
+                                                a{
+                                                    @extend .boton;
+                                                }
+                                                a:hover{
+                                                    @extend .boton2;
+                                                }
+                                                a:active{
+                                                    @extend .boton3;
+                                                }
+                                        }
                                 }
                         }
+                }   
+        }
+        div.caja3{
+            margin: 0.5%;
+                a{
+                    @extend .boton;
+                }
+                a:hover{
+                    @extend .boton2;
+                }
+                a:active{
+                    @extend .boton3;
                 }
         }
 }

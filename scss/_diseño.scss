@@ -19,6 +19,30 @@ $colores:(
     colorPrimario: rgba(28, 253, 178, 0.719)!important,
     colorSecundario: rgba(210, 106, 241, 0.68),
     titulo: #cd75e7,
-    sombra: black,
-    sincolor:rgba(255, 255, 255, 0)!important,
-)
+    sombra: 7px 5px 25px 1px,
+    sincolor: rgba(255, 255, 255, 0)!important,
+);
+
+$margen:(
+    marpad: 1%,
+    mar-ancho: 0% 0.5% 0% 0.5%,
+);
+
+.boton {
+    padding: 14px 25px ;
+    border-radius: 9px;
+    background: map-get($colores , colorSecundario);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+  
+.boton2 {
+    box-shadow: map-get($colores , sombra);
+    background: map-get($colores , titulo);
+}
+
+.boton3 {
+    transform: scale(0.97);
+}
