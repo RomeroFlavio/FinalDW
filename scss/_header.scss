@@ -7,7 +7,7 @@ header.header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
         div.caja1{
             margin: 0.5%;
                 a{
@@ -23,6 +23,7 @@ header.header{
         div.caja2{
             width: 50%;
                 nav{
+                    text-align: center;
                     width: 100%;
                     background-color: map-get($colores , sincolor);
                         div{
@@ -32,7 +33,8 @@ header.header{
                                     display: flex;
                                     justify-content: center;
                                         li{
-                                            margin: map-get($margen , mar-ancho);
+                                            margin: map-get($margen , marpad);
+                                            
                                                 a{
                                                     @extend .boton;
                                                 }

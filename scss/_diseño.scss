@@ -8,6 +8,7 @@
 
 .fondo {
     width: 100%;
+    
     background-image: url("../assets/images/logo/fondo_index.png");
     background-attachment: fixed;
     background-position: center;
@@ -26,6 +27,8 @@ $colores:(
 $margen:(
     marpad: 1%,
     mar-ancho: 0% 0.5% 0% 0.5%,
+    mar-alto: 0.5% 0% 0.5% 0%,
+    borde: 5px,
 );
 
 .boton {
